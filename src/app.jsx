@@ -178,7 +178,7 @@ const SERVICES = [
   n: '06',
   cat: 'NORMATIVA',
   title: 'Cumplimiento Normativo',
-  desc: 'Ley Karin, Ley 40 Horas, protocolos, reglamento interno, código de ética y prevención de riesgos.',
+  desc: 'Ley Karin, Ley 40 Horas, protocolos, reglamento interno y código de ética.',
   deliverables: ['Ley Karin', 'Ley 40 Horas', 'Reglamento interno']
 },
 {
