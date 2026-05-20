@@ -186,7 +186,7 @@ const SERVICES = [
   cat: 'PUNTUAL',
   title: 'Sesión Express',
   desc: 'Consultoría puntual por hora para resolver dudas específicas de gestión de personas o normativa.',
-  deliverables: ['Por hora', 'Respuesta concreta', 'Plan de trabajo']
+  deliverables: ['Por hora', 'Respuesta concreta', 'Desarrollo de plan de trabajo']
 },
 {
   n: '08',
