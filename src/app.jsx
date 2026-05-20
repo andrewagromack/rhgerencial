@@ -433,7 +433,7 @@ function CTA({ bgVariant, bgSpeed, accentColor }) {
               Agendar reunión <span className="arrow">→</span>
             </a>
             <a className="btn btn-ghost" href="https://wa.me/56978592310" target="_blank" rel="noopener">
-              WhatsApp +56 9 7859 2310
+              WhatsApp
             </a>
           </div>
           <div className="cta-direct">
@@ -475,7 +475,7 @@ function Footer({ accentColor }) {
             <h5>Contacto directo</h5>
             <ul>
               <li><a href="mailto:paolagonzalez@rhgerencial.cl">paolagonzalez@rhgerencial.cl</a></li>
-              <li><a href="https://wa.me/56978592310" target="_blank" rel="noopener">WhatsApp +56 9 7859 2310</a></li>
+              <li><a href="https://wa.me/56978592310" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a href="https://calendly.com/paolagonzalez-rhgerencial/30min" target="_blank" rel="noopener">Agendar Calendly</a></li>
               <li><a href="https://www.linkedin.com/in/pao-gonzalez/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
             </ul>
