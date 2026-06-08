@@ -1,1714 +1,458 @@
 <!DOCTYPE html>
-<html lang="es-CL">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<!-- Favicons -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon-apple.png">
-<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
-<meta name="theme-color" content="#050d24">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- SEO primario -->
-<!-- Geo / local SEO -->
-<meta name="geo.region" content="CL-RM">
-<meta name="geo.placename" content="Santiago, Chile">
-<meta name="geo.position" content="-33.4569;-70.6483">
-<meta name="ICBM" content="-33.4569, -70.6483">
-<title>RH Gerencial — Consultoría RRHH para PYMEs | Chile y Perú</title>
-<meta name="description" content="Consultoría RRHH para PYMEs en Chile y Perú. Diagnóstico, auditoría laboral, transformación digital y cumplimiento normativo. Experiencia gerencial real.">
-<meta name="robots" content="index, follow">
-
-<!-- hreflang: CL y PE comparten contenido en español -->
-<link rel="alternate" hreflang="es-CL" href="https://rhgerencial.cl/">
-<link rel="alternate" hreflang="es-PE" href="https://rhgerencial.cl/">
-<link rel="alternate" hreflang="x-default" href="https://rhgerencial.cl/">
-<link rel="canonical" href="https://rhgerencial.cl/">
-
-<!-- Open Graph / LinkedIn / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rhgerencial.cl/">
-<meta property="og:title" content="RH Gerencial — Consultoría Senior en Gestión de Personas">
-<meta property="og:description" content="Escalamos tu área de Personas con experiencia gerencial. RRHH duro, transformación digital y cumplimiento normativo para PYMEs y empresas medianas en Chile y Perú.">
-<meta property="og:image" content="https://rhgerencial.cl/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="es_CL">
-<meta property="og:site_name" content="RH Gerencial">
-
-<!-- Twitter / X Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://rhgerencial.cl/">
-<meta name="twitter:title" content="RH Gerencial — Consultoría Senior en Gestión de Personas">
-<meta name="twitter:description" content="Escalamos tu área de Personas con experiencia gerencial. RRHH duro, transformación digital y cumplimiento normativo para PYMEs en Chile y Perú.">
-<meta name="twitter:image" content="https://rhgerencial.cl/assets/og-image.png">
-
-<!-- Schema.org structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "RH Gerencial",
-  "description": "Consultoría senior en gestión de personas para PYMEs y empresas medianas. Implementación de procesos de RRHH, transformación digital y cumplimiento normativo.",
-  "url": "https://rhgerencial.cl",
-  "image": "https://rhgerencial.cl/assets/paola.jpg",
-  "logo": "https://rhgerencial.cl/favicon-512.png",
-  "telephone": "+56978592310",
-  "email": "paolagonzalez@rhgerencial.cl",
-  "slogan": "Estrategia · Personas · Resultados",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Santiago",
-    "addressRegion": "Región Metropolitana",
-    "addressCountry": "CL"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -33.4569,
-    "longitude": -70.6483
-  },
-  "areaServed": [
-    {
-      "@type": "Country",
-      "name": "Chile"
-    },
-    {
-      "@type": "Country",
-      "name": "Perú"
-    }
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/in/pao-gonzalez/"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+56978592310",
-    "contactType": "customer service",
-    "availableLanguage": "Spanish"
-  },
-  "knowsAbout": [
-    "Gestión de Recursos Humanos",
-    "Auditoría Laboral",
-    "Transformación Digital RRHH",
-    "Reclutamiento y Selección",
-    "Cumplimiento Normativo Laboral",
-    "Ley Karin",
-    "Ley 40 Horas",
-    "HRIS",
-    "Desarrollo Organizacional"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Paola González",
-    "jobTitle": "Consultora Senior y Fundadora",
-    "sameAs": "https://www.linkedin.com/in/pao-gonzalez/"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Servicios de Consultoría RRHH",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Diagnóstico RRHH",
-          "description": "Evaluación integral de cumplimiento, estructura, procesos y brechas críticas del área de personas."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Auditoría Laboral",
-          "description": "Revisión de nómina, cotizaciones, contratos, reglamentos y preparación ante fiscalizaciones."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Implementación de Procesos RRHH",
-          "description": "Diseño e instalación de onboarding, evaluación de desempeño y clima organizacional."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reclutamiento y Hunting Ejecutivo",
-          "description": "Búsqueda y selección de talento clave en posiciones técnicas, profesionales y gerenciales."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Transformación Digital RRHH",
-          "description": "Implementación de HRIS, ATS, firma digital, automatización y herramientas de IA aplicada."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Cumplimiento Normativo Laboral",
-          "description": "Adecuación a Ley Karin, Ley 40 Horas, reglamento interno y prevención de riesgos."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Mentoría y Dirección Externa de RRHH",
-          "description": "Acompañamiento estratégico continuo al equipo interno para escalar el área de personas."
-        }
-      }
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Paola González",
-  "jobTitle": "Consultora Senior en Gestión de Personas",
-  "description": "Más de 15 años como Gerente y Sub-Gerente de RRHH en ingeniería, telecomunicaciones, retail y start-ups en Chile y Perú. Fundadora de RH Gerencial.",
-  "url": "https://rhgerencial.cl",
-  "image": "https://rhgerencial.cl/assets/paola.jpg",
-  "sameAs": [
-    "https://www.linkedin.com/in/pao-gonzalez/"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "RH Gerencial",
-    "url": "https://rhgerencial.cl"
-  },
-  "knowsAbout": [
-    "Recursos Humanos",
-    "Gestión de Personas",
-    "Transformación Digital",
-    "Cumplimiento Laboral Chile",
-    "Desarrollo Organizacional"
-  ]
-}
-</script>
-
-<!-- Preload fuentes críticas (latin, primera pantalla) -->
-<link rel="preload" href="fonts/font-16.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/font-04.woff2" as="font" type="font/woff2" crossorigin>
-
-<!-- Fuentes locales (sin Google Fonts en runtime) -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RH Gerencial · Consultoría senior de Personas</title>
+<meta name="description" content="Consultoría senior de RRHH para PYMEs y empresas medianas en Chile y Perú. Diagnóstico, auditoría laboral, transformación digital y cumplimiento." />
+<meta name="theme-color" content="#0A0A0B" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
 <style>
-/* latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-01.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-02.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-03.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-04.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-09.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-10.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/font-09.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/font-10.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-15.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/font-16.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/font-15.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/font-16.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/font-15.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/font-16.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/font-15.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/font-16.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-
-<!-- Estilos del sitio -->
-<style>
-/* RH Gerencial — Sistema visual
-   Navy + Dorado. Profesional, confiable, tecnológico.
-*/
-
-:root {
-  --navy-900: #050d24;
-  --navy-800: #0a1838;
-  --navy-700: #12224a;
-  --navy-600: #1c2f60;
-  --gold-500: #c9a961;
-  --gold-400: #d4b574;
-  --gold-300: #e8d4a0;
-  --gold-100: #f5ecd3;
-  --bone: #f6f2e9;
-  --bone-2: #ede6d6;
-  --ink: #0d1226;
-  --muted: #6b7388;
-
-  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
-  --font-display: 'Instrument Serif', 'Newsreader', Georgia, serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-}
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
-  font-family: var(--font-sans);
-  color: var(--ink);
-  background: var(--bone);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-body { overflow-x: hidden; }
-
-a { color: inherit; text-decoration: none; }
-button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-
-img, svg { display: block; max-width: 100%; }
-
-/* ===== Layout ===== */
-
-.page { width: 100%; }
-
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-@media (max-width: 720px) {
-  .container { padding: 0 20px; }
-}
-@media (max-width: 420px) {
-  .container { padding: 0 16px; }
-}
-
-/* ===== Navigation ===== */
-
-.nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  background: rgba(5, 13, 36, 0.55);
-  border-bottom: 1px solid rgba(201, 169, 97, 0.12);
-  gap: 16px;
-}
-
-.nav-collapse {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-burger {
-  display: none;
-  background: transparent;
-  border: 1px solid rgba(201, 169, 97, 0.35);
-  width: 42px; height: 42px;
-  border-radius: 8px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  cursor: pointer;
-  z-index: 102;
-  transition: border-color 0.2s, background 0.2s;
-}
-.nav-burger:hover { border-color: var(--gold-400); background: rgba(201, 169, 97, 0.08); }
-.nav-burger span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: var(--gold-300);
-  border-radius: 1px;
-  transition: transform 0.25s ease, opacity 0.2s;
-}
-.nav.is-open .nav-burger span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.nav.is-open .nav-burger span:nth-child(2) { opacity: 0; }
-.nav.is-open .nav-burger span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-
-.nav-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--bone);
-}
-
-.nav-brand .logo-mark { width: 36px; height: 36px; }
-.nav-brand .wordmark {
-  font-family: var(--font-sans);
-  font-size: 14px;
-  line-height: 1.3;
-}
-.nav-brand .wordmark b {
-  font-style: normal;
-  font-family: var(--font-sans);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  font-size: 14px;
-  text-transform: uppercase;
-  display: block;
-  line-height: 1;
-  color: var(--bone);
-}
-.nav-brand .wordmark span {
-  font-size: 10.5px;
-  font-family: var(--font-mono);
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  display: block;
-  line-height: 1.4;
-  color: rgba(201, 169, 97, 0.75);
-  margin-top: 4px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  font-size: 14px;
-  color: rgba(246, 242, 233, 0.78);
-  font-weight: 500;
-}
-.nav-links a { transition: color 0.2s; }
-.nav-links a:hover { color: var(--gold-400); }
-
-.nav-cta {
-  padding: 10px 18px;
-  border: 1px solid rgba(201, 169, 97, 0.4);
-  color: var(--gold-300);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  transition: all 0.2s;
-}
-.nav-cta:hover {
-  background: var(--gold-500);
-  border-color: var(--gold-500);
-  color: var(--navy-900);
-}
-
-@media (max-width: 880px) {
-  .nav { padding: 14px 20px; }
-  .nav-burger { display: flex; }
-  .nav-collapse {
-    position: fixed;
-    top: 0; right: 0;
-    width: min(360px, 88vw);
-    height: 100vh;
-    background: var(--navy-900);
-    border-left: 1px solid rgba(201, 169, 97, 0.2);
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 96px 28px 32px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
+  /* ---- HERO ---- */
+  .hero { padding-top: clamp(56px, 8vw, 92px); }
+  h1.hero-h {
+    font-weight: 800; font-size: clamp(40px, 6.4vw, 78px); line-height: 1.02; letter-spacing: -0.035em;
+    margin: 0; max-width: 1090px; text-wrap: balance;
   }
-  .nav-collapse.is-open { transform: translateX(0); }
-  .nav-links {
-    display: flex !important;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-  }
-  .nav-links a {
-    padding: 18px 4px;
-    border-bottom: 1px solid rgba(246, 242, 233, 0.08);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--bone);
-    transition: color 0.2s, padding-left 0.2s;
-  }
-  .nav-links a:hover { color: var(--gold-300); padding-left: 12px; }
-  .nav-cta {
-    margin-top: 28px;
-    text-align: center;
-    padding: 16px 22px;
-    background: var(--gold-500);
-    color: var(--navy-900);
-    border-color: var(--gold-500);
-  }
-  .nav-brand .wordmark span { display: none; }
-  .nav-brand .wordmark b { font-size: 13px; }
-}
-@media (max-width: 760px) {
-  .nav-links { display: flex; }
-}
+  .hero-cols { display: flex; justify-content: flex-end; margin-top: clamp(40px, 5vw, 64px); }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 48px); max-width: 720px; }
+  .hero-grid p { margin: 0; font-size: 18px; line-height: 1.55; font-weight: 500; }
+  .arrow-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-size: 16px; font-weight: 700; border-bottom: 2px solid var(--fucsia); padding-bottom: 3px; transition: gap .18s ease; }
+  .arrow-link:hover { gap: 14px; }
 
-/* ===== Hero ===== */
+  /* ---- TRAYECTORIA ---- */
+  .section { padding-top: clamp(72px, 12vw, 120px); }
+  .tray-grid { display: grid; grid-template-columns: 1.4fr 0.85fr; gap: clamp(36px, 5vw, 72px); align-items: start; }
+  .tray-main h2 { font-weight: 700; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -0.025em; margin: 0; max-width: 620px; }
+  .tray-main > p { margin: 24px 0 0; font-size: 17px; line-height: 1.55; color: var(--grey); font-weight: 500; max-width: 560px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 2px solid var(--black); }
+  .stat { padding: 30px 22px 0 0; }
+  .stat + .stat { border-left: 1px solid var(--rule); padding-left: 26px; }
+  .stat .k { font-size: clamp(38px, 4.2vw, 52px); font-weight: 800; letter-spacing: -0.04em; line-height: 0.9; width: fit-content; }
+  .stat .l { font-size: 15px; color: var(--grey); margin-top: 14px; font-weight: 500; }
+  .tray-photo { position: relative; }
+  .tray-photo .accent { position: absolute; left: -16px; top: -16px; width: 104px; height: 104px; background: var(--grad); z-index: 0; }
+  .tray-photo image-slot, .tray-photo .tray-img { position: relative; z-index: 1; width: 100%; height: clamp(420px, 46vw, 560px); display: block; background: linear-gradient(150deg, #FFE7E3, #FFE1F0); border-radius: 6px; }
+  .tray-photo .tray-img { object-fit: cover; object-position: 50% 22%; }
+  .photo-cap { position: relative; z-index: 1; margin-top: 18px; display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: var(--grey); font-weight: 600; }
+  .photo-cap .dot { width: 9px; height: 9px; background: var(--grad); flex: 0 0 auto; }
+  .photo-cap b { font-weight: 800; color: var(--black); }
 
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background: var(--navy-900);
-  color: var(--bone);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 140px 0 100px;
-}
-@media (max-width: 880px) {
-  .hero { padding: 110px 0 70px; min-height: auto; }
-}
-@media (max-width: 560px) {
-  .hero { padding: 100px 0 60px; }
-}
+  /* ---- SERVICIOS ---- */
+  .serv-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; border-bottom: 2px solid var(--black); padding-bottom: 18px; }
+  .serv-head h2 { font-weight: 800; font-size: clamp(28px, 3.2vw, 36px); letter-spacing: -0.03em; margin: 0; }
+  .serv-head .idx { font-size: 14px; color: var(--grey-40); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .serv-row { position: relative; display: grid; grid-template-columns: 92px 1fr 1.05fr; gap: clamp(20px, 3vw, 32px); align-items: start; padding: 36px 0; border-bottom: 1px solid var(--rule); transition: background .28s ease, padding .28s ease; }
+  .serv-row::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--grad); transform: scaleY(0); transform-origin: top; transition: transform .3s ease; }
+  .serv-row:hover { background: linear-gradient(90deg, rgba(255,73,70,0.07), rgba(255,26,140,0.02) 70%); padding-left: 22px; }
+  .serv-row:hover::before { transform: scaleY(1); }
+  .serv-row .n { font-size: clamp(30px, 3.4vw, 40px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; width: fit-content; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .serv-row h3 { font-weight: 700; font-size: clamp(21px, 2.4vw, 26px); line-height: 1.12; letter-spacing: -0.02em; margin: 0; transition: color .2s; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chips span { font-size: 13.5px; font-weight: 600; border: 1px solid var(--rule); color: var(--grey); border-radius: 2px; padding: 5px 13px; transition: border-color .22s, color .22s, background .22s; }
+  .serv-row:hover .chips span { border-color: var(--coral); color: var(--black); }
+  .serv-row .desc { margin: 0; font-size: 17px; line-height: 1.55; color: #4A4A52; max-width: 470px; padding-top: 4px; font-weight: 500; }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
+  /* ---- SERVICIOS: grilla de 8 tarjetas ---- */
+  .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 48px; }
+  .svc-card { position: relative; overflow: hidden; background: var(--white); border: 1px solid var(--rule); border-radius: 10px; padding: 26px 24px 22px; display: flex; flex-direction: column; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+  .svc-card::before { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 100%; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform .3s ease; }
+  .svc-card:hover { transform: translateY(-4px); box-shadow: 0 26px 48px -30px rgba(10,10,11,0.55); border-color: rgba(255,73,70,0.4); }
+  .svc-card:hover::before { transform: scaleX(1); }
+  .svc-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
+  .svc-num { font-size: 34px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; width: fit-content; font-variant-numeric: tabular-nums; }
+  .svc-cat { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.11em; color: var(--grey-soft); border: 1px solid var(--rule); border-radius: 40px; padding: 5px 11px; white-space: nowrap; }
+  .svc-card h3 { font-weight: 700; font-size: 21px; line-height: 1.14; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .svc-card .sdesc { font-size: 14.5px; line-height: 1.5; color: var(--grey); font-weight: 500; margin: 0 0 18px; }
+  .svc-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
+  .svc-chips span { font-size: 12.5px; font-weight: 600; color: var(--grey); border: 1px solid var(--rule); border-radius: 2px; padding: 4px 10px; transition: border-color .22s, color .22s; }
+  .svc-card:hover .svc-chips span { border-color: rgba(255,73,70,0.45); color: var(--black); }
+  .svc-cta { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 700; }
+  .svc-cta .ar { transition: transform .18s ease; font-weight: 800; }
+  .svc-card:hover .svc-cta .ar { transform: translateX(5px); }
+  @media (max-width: 1180px) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 820px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .svc-grid { grid-template-columns: 1fr; } .why-grid { grid-template-columns: 1fr; } }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
+  /* ---- SHOWCASE / EN LA PRÁCTICA ---- */
+  .showcase { margin-top: clamp(72px, 12vw, 120px); background: var(--black); color: var(--white); padding: clamp(60px, 9vw, 104px) 0; overflow: hidden; }
+  .showcase .label span { color: rgba(255,255,255,0.66); }
+  .showcase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); align-items: center; }
+  .showcase-copy h2 { font-weight: 800; font-size: clamp(28px, 3.8vw, 46px); line-height: 1.07; letter-spacing: -0.03em; margin: 0; }
+  .showcase-copy p { font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.7); font-weight: 500; margin: 22px 0 0; max-width: 470px; }
+  .showcase-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .showcase-tags span { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); border: 1px solid rgba(255,255,255,0.24); border-radius: 2px; padding: 7px 14px; }
+  .showcase-visual { position: relative; }
+  .showcase-visual image-slot { width: 100%; height: clamp(340px, 38vw, 460px); display: block; background: rgba(255,255,255,0.07); border-radius: 6px; }
 
-@media (max-width: 980px) {
-  .hero-content { grid-template-columns: 1fr; gap: 48px; }
-  .hero-mark { order: -1; }
-}
-@media (max-width: 560px) {
-  .hero-content { gap: 36px; }
-}
+  .dashboard { position: absolute; left: -28px; bottom: -34px; width: min(310px, 78%); background: var(--white); color: var(--black);
+    border-radius: 8px; box-shadow: 0 34px 70px -24px rgba(0,0,0,0.7); padding: 18px 18px 20px; }
+  .dash-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .dash-title { font-size: 14px; font-weight: 800; letter-spacing: -0.01em; }
+  .dash-live { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fucsia); }
+  .dash-live i { width: 7px; height: 7px; border-radius: 50%; background: var(--fucsia); animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1);} 50% { opacity: .35; transform: scale(1.35);} }
+  .dash-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
+  .kpi-num { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+  .kpi-lab { font-size: 11px; color: var(--grey); font-weight: 600; margin-top: 5px; }
+  .dash-bars { display: flex; align-items: stretch; gap: 7px; height: 76px; padding-top: 8px; margin-top: 4px; border-top: 1px solid var(--rule); }
+  .dash-bars span { flex: 1; align-self: stretch; border-radius: 2px 2px 0 0; background: var(--grad); transform: scaleY(var(--s)); transform-origin: bottom; transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+  @media (prefers-reduced-motion: no-preference) { .dashboard:not(.in) .dash-bars span { transform: scaleY(0.04); } }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 12px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--gold-400);
-  font-weight: 600;
-  margin-bottom: 28px;
-  flex-wrap: wrap;
-  line-height: 1.3;
-}
-@media (max-width: 480px) {
-  .eyebrow { font-size: 10.5px; letter-spacing: 0.24em; margin-bottom: 20px; }
-}
-.eyebrow::before {
-  content: '';
-  width: 28px;
-  height: 1px;
-  background: var(--gold-400);
-  flex-shrink: 0;
-}
+  /* ---- ENFOQUE: STATEMENT ---- */
+  .statement { margin-top: clamp(72px, 12vw, 120px); background: var(--grad); color: var(--white); padding: clamp(56px, 8vw, 88px) 0; }
+  .statement .label span { color: rgba(255,255,255,0.9); }
+  .statement .label .dot { background: var(--white); }
+  .statement p { font-weight: 800; font-size: clamp(30px, 4.4vw, 54px); line-height: 1.06; letter-spacing: -0.03em; margin: 0; max-width: 980px; text-wrap: balance; }
 
-.hero h1 {
-  font-family: var(--font-sans);
-  font-size: clamp(36px, 6.5vw, 84px);
-  line-height: 1;
-  letter-spacing: -0.035em;
-  font-weight: 800;
-  margin-bottom: 28px;
-  word-break: break-word;
-}
-@media (max-width: 480px) {
-  .hero h1 { font-size: clamp(32px, 10vw, 44px); line-height: 1.02; }
-  .hero h1 br { display: none; }
-}
-.hero h1 em {
-  font-style: normal;
-  color: var(--gold-300);
-  font-weight: 800;
-}
+  /* ---- ENFOQUE: POR QUÉ ---- */
+  .blk-head { max-width: 760px; }
+  .blk-head h2 { font-weight: 800; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.08; letter-spacing: -0.03em; margin: 0; }
+  .blk-head p { font-size: 17px; line-height: 1.6; color: var(--grey); font-weight: 500; margin: 18px 0 0; }
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+  .why-card { border: 1px solid var(--rule); border-radius: 10px; padding: 22px 22px 24px; transition: border-color .22s, transform .22s; }
+  .why-card:hover { border-color: rgba(255,73,70,0.4); transform: translateY(-3px); }
+  .why-card .ltr { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; width: fit-content; }
+  .why-card h3 { font-weight: 700; font-size: 17px; line-height: 1.2; letter-spacing: -0.015em; margin: 14px 0 8px; }
+  .why-card p { font-size: 14px; line-height: 1.5; color: var(--grey); font-weight: 500; margin: 0; }
 
-.hero-sub {
-  font-size: 18px;
-  line-height: 1.6;
-  color: rgba(246, 242, 233, 0.75);
-  max-width: 560px;
-  margin-bottom: 40px;
-}
-@media (max-width: 560px) {
-  .hero-sub { font-size: 16px; }
-}
+  /* ---- ESLOGAN ---- */
+  .slogan { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 3.5vw, 44px); flex-wrap: wrap;
+    margin-top: clamp(52px, 7vw, 84px); padding: clamp(28px, 4vw, 40px) 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .slogan .w { font-weight: 800; font-size: clamp(22px, 3.6vw, 42px); letter-spacing: -0.03em; line-height: 1; }
+  .slogan .sq { position: relative; width: 12px; height: 12px; flex: 0 0 auto; }
+  .slogan .sq i { position: absolute; inset: 0; background: var(--coral); }
+  .slogan .sq i + i { left: 42%; top: 42%; width: 58%; height: 58%; background: var(--fucsia); inset: auto; }
 
-.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
-@media (max-width: 480px) {
-  .hero-ctas { gap: 12px; }
-  .hero-ctas .btn { width: 100%; justify-content: center; }
-}
+  /* ---- ENFOQUE: METODOLOGÍA (banda negra) ---- */
+  .method { margin-top: clamp(72px, 12vw, 120px); background: var(--black); color: var(--white); padding: clamp(64px, 9vw, 104px) 0; }
+  .method .label span { color: rgba(255,255,255,0.66); }
+  .method .blk-head p { color: rgba(255,255,255,0.7); }
+  .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 50px; }
+  .method-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; padding: 30px 28px; display: flex; flex-direction: column; transition: border-color .22s, transform .22s; }
+  .method-card:hover { border-color: rgba(255,73,70,0.5); transform: translateY(-3px); }
+  .method-card .mtop { display: flex; align-items: baseline; justify-content: space-between; }
+  .method-card .mnum { font-size: 34px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+  .method-card .mtime { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--coral); white-space: nowrap; }
+  .method-card h3 { font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 20px 0 10px; color: #fff; }
+  .method-card p { font-size: 15.5px; line-height: 1.55; color: rgba(255,255,255,0.68); font-weight: 500; margin: 0 0 24px; flex: 1; }
+  .method-card .deliver { padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.16); }
+  .method-card .deliver .dl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); display: block; margin-bottom: 4px; }
+  .method-card .deliver .dv { font-size: 15px; font-weight: 700; color: #fff; }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 28px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  transition: all 0.25s;
-}
-.btn-primary {
-  background: var(--gold-500);
-  color: var(--navy-900);
-}
-.btn-primary:hover { background: var(--gold-300); transform: translateY(-1px); }
-.btn-ghost {
-  border: 1px solid rgba(246, 242, 233, 0.25);
-  color: var(--bone);
-}
-.btn-ghost:hover { border-color: var(--gold-400); color: var(--gold-300); }
+  /* ---- ENFOQUE: INDUSTRIAS ---- */
+  .ind-head { max-width: 620px; margin-top: 22px; }
+  .ind-head h2 { font-weight: 800; font-size: clamp(26px, 3.2vw, 40px); letter-spacing: -0.03em; line-height: 1.05; margin: 0; }
+  .ind-head p { font-size: 17px; line-height: 1.55; color: var(--grey); font-weight: 500; margin: 14px 0 0; }
+  .ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+  .ind-card { position: relative; overflow: hidden; border: 1px solid var(--rule); border-radius: 8px; padding: 26px 24px 24px; transition: border-color .22s, transform .22s, box-shadow .22s; }
+  .ind-card::before { content: ""; position: absolute; left: 0; top: 0; height: 3px; width: 0; background: var(--grad); transition: width .3s ease; }
+  .ind-card:hover { border-color: transparent; transform: translateY(-3px); box-shadow: 0 14px 34px rgba(10,10,11,0.08); }
+  .ind-card:hover::before { width: 100%; }
+  .ind-top { display: flex; align-items: baseline; justify-content: space-between; }
+  .ind-card .abbr { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; width: fit-content; }
+  .ind-card .inum { font-size: 12px; font-weight: 700; color: var(--grey-soft); letter-spacing: 0.04em; }
+  .ind-card .iname { font-size: 17px; font-weight: 700; color: var(--black); margin-top: 16px; letter-spacing: -0.01em; }
+  .ind-card .idesc { font-size: 13.5px; line-height: 1.5; color: var(--grey); font-weight: 500; margin: 6px 0 0; }
 
-.btn .arrow { transition: transform 0.25s; }
-.btn:hover .arrow { transform: translateX(4px); }
-
-.hero-mark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.hero-mark-frame {
-  position: relative;
-  padding: 44px 38px;
-  border: 1px solid rgba(201, 169, 97, 0.3);
-  background: rgba(10, 24, 56, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  max-width: 100%;
-  width: 100%;
-  max-width: 480px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.hero-mark-frame svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-@media (max-width: 880px) {
-  .hero-mark-frame { padding: 28px 22px; max-width: 420px; }
-}
-@media (max-width: 480px) {
-  .hero-mark-frame { padding: 22px 16px; max-width: 100%; }
-}
-.hero-mark-frame::before, .hero-mark-frame::after {
-  content: '';
-  position: absolute;
-  width: 20px; height: 20px;
-  border-color: var(--gold-500);
-  border-style: solid;
-  border-width: 0;
-}
-.hero-mark-frame::before {
-  top: -1px; left: -1px;
-  border-top-width: 2px; border-left-width: 2px;
-}
-.hero-mark-frame::after {
-  bottom: -1px; right: -1px;
-  border-bottom-width: 2px; border-right-width: 2px;
-}
-
-/* Stats strip */
-.hero-stats {
-  position: relative;
-  z-index: 2;
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(246, 242, 233, 0.12);
-}
-@media (max-width: 880px) {
-  .hero-stats { margin-top: 50px; gap: 24px; }
-  .hero-stats .stat-num { font-size: 42px; }
-}
-.hero-stats .stat-num {
-  font-family: var(--font-sans);
-  font-size: 52px;
-  font-weight: 800;
-  color: var(--gold-300);
-  line-height: 1;
-  margin-bottom: 10px;
-  letter-spacing: -0.03em;
-}
-.hero-stats .stat-num sup { font-size: 22px; vertical-align: top; margin-left: 2px; color: var(--gold-500); font-weight: 700; }
-.hero-stats .stat-label {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(246, 242, 233, 0.55);
-  font-weight: 500;
-}
-
-@media (max-width: 760px) {
-  .hero-stats { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* Hero tech bar */
-.hero-tech-bar {
-  margin-top: 36px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px 14px;
-  padding: 14px 0;
-  border-top: 1px dashed rgba(201, 169, 97, 0.22);
-  border-bottom: 1px dashed rgba(201, 169, 97, 0.22);
-}
-@media (max-width: 560px) {
-  .hero-tech-bar { gap: 8px 10px; padding: 12px 0; }
-  .tech-tag { font-size: 10.5px; padding: 4px 8px; }
-}
-.tech-label {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: rgba(201, 169, 97, 0.75);
-  font-weight: 600;
-  margin-right: 4px;
-}
-.tech-tag {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  padding: 5px 10px;
-  border: 1px solid rgba(201, 169, 97, 0.3);
-  color: rgba(246, 242, 233, 0.85);
-  font-weight: 500;
-}
-
-/* ===== Section base ===== */
-
-section.block {
-  padding: 120px 0;
-  position: relative;
-}
-@media (max-width: 880px) { section.block { padding: 80px 0; } }
-@media (max-width: 560px) { section.block { padding: 64px 0; } }
-
-.section-head {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 60px;
-  margin-bottom: 80px;
-  align-items: end;
-}
-@media (max-width: 880px) {
-  .section-head { margin-bottom: 50px; }
-}
-@media (max-width: 860px) {
-  .section-head { grid-template-columns: 1fr; gap: 24px; }
-}
-
-.section-head .label {
-  font-size: 12px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--gold-500);
-  font-weight: 600;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.section-head .label::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: var(--gold-500);
-}
-.section-head h2 {
-  font-family: var(--font-sans);
-  font-size: clamp(34px, 4.6vw, 56px);
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  font-weight: 800;
-}
-.section-head h2 em {
-  font-style: normal;
-  color: var(--gold-500);
-  font-weight: 800;
-}
-.section-head .lede {
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--muted);
-  max-width: 540px;
-}
-
-/* ===== Tagline band ===== */
-
-.tagline-band {
-  background: var(--navy-900);
-  color: var(--bone);
-  padding: 50px 0;
-  border-top: 1px solid rgba(201, 169, 97, 0.2);
-  border-bottom: 1px solid rgba(201, 169, 97, 0.2);
-  overflow: hidden;
-  position: relative;
-}
-.tagline-band::before,
-.tagline-band::after {
-  content: '';
-  position: absolute;
-  left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold-500) 50%, transparent);
-  opacity: 0.4;
-}
-.tagline-band::before { top: 0; }
-.tagline-band::after  { bottom: 0; }
-.tagline-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(20px, 4vw, 60px);
-  flex-wrap: wrap;
-}
-.tagline-word {
-  font-family: var(--font-sans);
-  font-weight: 800;
-  font-size: clamp(28px, 5vw, 56px);
-  line-height: 1;
-  letter-spacing: -0.035em;
-  color: var(--gold-300);
-  text-transform: lowercase;
-}
-.tagline-word:nth-child(3) {
-  color: var(--bone);
-}
-.tagline-word:nth-child(5) {
-  color: var(--gold-500);
-}
-.tagline-dot {
-  width: 10px; height: 10px;
-  background: var(--gold-500);
-  flex-shrink: 0;
-}
-
-/* ===== Services ===== */
-
-.services-block { background: var(--bone); }
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-@media (max-width: 1100px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
-
-.service-card {
-  background: #fff;
-  border: 1px solid rgba(13, 18, 38, 0.08);
-  border-radius: 4px;
-  padding: 28px 24px 24px;
-  transition: all 0.25s;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  position: relative;
-  overflow: hidden;
-}
-.service-card.is-highlight {
-  background: linear-gradient(180deg, #fff, #fbf6ea);
-  border-color: rgba(201, 169, 97, 0.5);
-}
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: var(--gold-500);
-  transform: scaleX(0); transform-origin: left;
-  transition: transform 0.3s;
-}
-.service-card:hover { transform: translateY(-3px); border-color: rgba(201, 169, 97, 0.5); box-shadow: 0 18px 40px -20px rgba(10,24,56,0.18); }
-.service-card:hover::before { transform: scaleX(1); }
-.service-card.is-highlight::before { transform: scaleX(1); background: var(--gold-500); }
-
-.sc-head {
-  display: flex; align-items: center; justify-content: space-between;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(13,18,38,0.08);
-}
-.sc-num {
-  font-family: var(--font-mono);
-  font-size: 11px; letter-spacing: 0.18em;
-  color: var(--gold-500); font-weight: 600;
-}
-.sc-cat {
-  font-family: var(--font-mono);
-  font-size: 9px; letter-spacing: 0.28em;
-  color: var(--muted); font-weight: 600;
-  text-transform: uppercase;
-}
-.service-card h3 {
-  font-family: var(--font-sans);
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--navy-900);
-}
-.service-card p {
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: var(--muted);
-  flex: 1;
-}
-.sc-list {
-  list-style: none;
-  display: flex; flex-direction: column; gap: 6px;
-  margin-top: 4px;
-}
-.sc-list li {
-  font-size: 12px;
-  color: var(--navy-700);
-  display: flex; align-items: center; gap: 8px;
-  font-weight: 500;
-}
-.sc-list .dot {
-  width: 6px; height: 6px;
-  background: var(--gold-500);
-  display: inline-block;
-}
-.service-card .more {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--navy-900);
-  display: flex; align-items: center; gap: 8px;
-  margin-top: 8px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(13,18,38,0.06);
-  transition: gap 0.2s, color 0.2s;
-}
-.service-card:hover .more { gap: 12px; color: var(--gold-500); }
-
-/* ===== Process ===== */
-
-.process-block {
-  background: var(--navy-900);
-  color: var(--bone);
-  overflow: hidden;
-  position: relative;
-}
-.process-block .section-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.35;
-  pointer-events: none;
-}
-.process-block .container { position: relative; z-index: 1; }
-.process-block .section-head .label { color: var(--gold-400); }
-.process-block .section-head .label::before { background: var(--gold-400); }
-.process-block .section-head h2 em { color: var(--gold-300); }
-.process-block .section-head .lede { color: rgba(246, 242, 233, 0.7); }
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 880px) { .process-grid { grid-template-columns: 1fr; } }
-
-.process-card {
-  border: 1px solid rgba(201, 169, 97, 0.22);
-  background: rgba(10, 24, 56, 0.4);
-  padding: 30px;
-  border-radius: 4px;
-  display: flex; flex-direction: column; gap: 14px;
-  position: relative;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.process-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0;
-  width: 60%; height: 2px;
-  background: var(--gold-500);
-}
-.pc-num {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.24em;
-  color: var(--gold-500);
-  font-weight: 600;
-}
-.pc-meta {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.24em;
-  color: rgba(246, 242, 233, 0.5);
-  text-transform: uppercase;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-.process-card h4 {
-  font-family: var(--font-sans);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  line-height: 1.1;
-  margin-top: 8px;
-}
-.process-card p {
-  font-size: 14.5px;
-  line-height: 1.6;
-  color: rgba(246, 242, 233, 0.7);
-}
-.pc-out {
-  margin-top: auto;
-  padding-top: 18px;
-  border-top: 1px solid rgba(246, 242, 233, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.pc-out .k {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.24em;
-  color: rgba(201, 169, 97, 0.7);
-  text-transform: uppercase;
-}
-.pc-out .v {
-  font-size: 14px;
-  color: var(--gold-300);
-  font-weight: 600;
-}
-
-/* ===== Industries / clientes ===== */
-
-.clients-block { background: var(--bone-2); padding: 70px 0; }
-.clients-head { margin-bottom: 32px; }
-.label-mono {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
-}
-.industries-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-}
-@media (max-width: 880px) { .industries-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 520px) { .industries-grid { grid-template-columns: repeat(2, 1fr); } }
-.ind {
-  border: 1px solid rgba(13, 18, 38, 0.1);
-  background: #fff;
-  padding: 20px 16px;
-  display: flex; flex-direction: column; gap: 8px;
-  align-items: flex-start;
-  border-radius: 3px;
-  position: relative;
-}
-.ind::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 24px; height: 1px;
-  background: var(--gold-500);
-}
-.ind-code {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  color: var(--gold-500);
-  font-weight: 700;
-}
-.ind-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--navy-900);
-  letter-spacing: -0.01em;
-}
-
-/* ===== Quote / about ===== */
-
-.about-block { background: var(--bone); }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-@media (max-width: 880px) {
-  .about-grid { grid-template-columns: 1fr; gap: 50px; }
-}
-.about-visual {
-  aspect-ratio: 4/5;
-  background: var(--navy-900);
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid rgba(13, 18, 38, 0.1);
-}
-.about-frame-mark {
-  position: absolute;
-  top: 18px; left: 18px; z-index: 2;
-  opacity: 0.75;
-}
-.about-frame-corner {
-  position: absolute; z-index: 2;
-  width: 18px; height: 18px;
-  border: 2px solid var(--gold-500);
-  border-style: solid;
-}
-.about-frame-corner.tl { top: 10px; left: 10px; border-right: none; border-bottom: none; }
-.about-frame-corner.tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
-.about-frame-corner.bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
-.about-frame-corner.br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
-
-.about-visual .placeholder {
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(45deg, rgba(201,169,97,0.04) 0, rgba(201,169,97,0.04) 2px, transparent 2px, transparent 14px),
-    var(--navy-800);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(201, 169, 97, 0.55);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 30px;
-}
-.about-text h2.about-name,
-.about-text h2 {
-  font-family: var(--font-sans);
-  font-size: clamp(40px, 5vw, 60px);
-  line-height: 1;
-  letter-spacing: -0.035em;
-  font-weight: 800;
-  margin-bottom: 8px;
-  color: var(--navy-900);
-}
-.about-role {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold-500);
-  font-weight: 600;
-  margin-bottom: 28px;
-}
-.about-text p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-.about-text p strong {
-  color: var(--navy-900);
-  font-weight: 700;
-}
-.about-meta {
-  margin-top: 32px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(13, 18, 38, 0.12);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.about-meta .item .k {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-.about-meta .item .v {
-  font-family: var(--font-sans);
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--navy-900);
-  letter-spacing: -0.02em;
-}
-.linkedin-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 24px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--gold-500);
-  font-weight: 600;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--gold-500);
-  transition: gap 0.2s, color 0.2s;
-}
-.linkedin-link:hover { gap: 14px; color: var(--navy-900); border-color: var(--navy-900); }
-
-/* ===== Differentiators ===== */
-
-.diff-block {
-  background: var(--bone-2);
-  padding: 100px 0;
-  border-top: 1px solid rgba(13, 18, 38, 0.06);
-  border-bottom: 1px solid rgba(13, 18, 38, 0.06);
-}
-.diff-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border-top: 1px solid rgba(13, 18, 38, 0.12);
-  border-left: 1px solid rgba(13, 18, 38, 0.12);
-}
-@media (max-width: 1000px) { .diff-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .diff-grid { grid-template-columns: 1fr; } }
-.diff-item {
-  padding: 36px 32px;
-  border-right: 1px solid rgba(13, 18, 38, 0.12);
-  border-bottom: 1px solid rgba(13, 18, 38, 0.12);
-  background: var(--bone);
-  position: relative;
-  display: flex; flex-direction: column; gap: 14px;
-  transition: background 0.25s;
-}
-.diff-item:hover { background: #fff; }
-.diff-letter {
-  font-family: var(--font-sans);
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--gold-500);
-  line-height: 1;
-  width: 44px; height: 44px;
-  display: flex; align-items: center; justify-content: center;
-  border: 1.5px solid var(--gold-500);
-  margin-bottom: 8px;
-}
-.diff-item h4 {
-  font-family: var(--font-sans);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.015em;
-  color: var(--navy-900);
-}
-.diff-item p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--muted);
-}
-
-/* ===== CTA ===== */
-
-.cta-block {
-  background: var(--navy-900);
-  color: var(--bone);
-  position: relative;
-  overflow: hidden;
-}
-.cta-block .section-bg {
-  position: absolute; inset: 0; z-index: 0; pointer-events: none;
-}
-.cta-block .container { position: relative; z-index: 1; }
-.cta-inner {
-  padding: 110px 0;
-  text-align: center;
-  max-width: 820px;
-  margin: 0 auto;
-  display: flex; flex-direction: column; align-items: center;
-}
-.cta-mark { margin-bottom: 36px; }
-.cta-inner h2 {
-  font-family: var(--font-sans);
-  font-size: clamp(40px, 6vw, 72px);
-  line-height: 1.05;
-  letter-spacing: -0.035em;
-  font-weight: 800;
-  margin-bottom: 32px;
-}
-.cta-inner h2 em {
-  color: var(--gold-300);
-  font-style: normal;
-  font-weight: 800;
-}
-.cta-inner p {
-  font-size: 17px;
-  color: rgba(246, 242, 233, 0.7);
-  line-height: 1.6;
-  margin-bottom: 36px;
-}
-.cta-actions {
-  display: flex; gap: 16px; flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 32px;
-}
-@media (max-width: 480px) {
-  .cta-actions .btn { width: 100%; justify-content: center; }
-}
-
-/* Tagline band responsive */
-@media (max-width: 560px) {
-  .tagline-band { padding: 36px 0; }
-  .tagline-inner { gap: 14px; }
-  .tagline-dot { width: 7px; height: 7px; }
-}
-.cta-direct {
-  margin-top: 12px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(246, 242, 233, 0.1);
-  width: 100%;
-  max-width: 420px;
-}
-.cta-direct a {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--gold-300);
-  letter-spacing: 0.06em;
-  border-bottom: 1px solid rgba(201, 169, 97, 0.3);
-  padding-bottom: 2px;
-  transition: border-color 0.2s, color 0.2s;
-}
-.cta-direct a:hover { color: var(--gold-500); border-color: var(--gold-500); }
-
-/* ===== Footer ===== */
-
-footer {
-  background: var(--navy-900);
-  color: rgba(246, 242, 233, 0.7);
-  padding: 60px 0 32px;
-  border-top: 1px solid rgba(201, 169, 97, 0.12);
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 50px;
-}
-@media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
-
-.footer-brand .desc {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-top: 16px;
-  color: rgba(246, 242, 233, 0.55);
-  max-width: 320px;
-}
-.footer-col h5 {
-  font-size: 11px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--gold-400);
-  font-weight: 600;
-  margin-bottom: 18px;
-}
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer-col a { font-size: 14px; transition: color 0.2s; }
-.footer-col a:hover { color: var(--gold-300); }
-
-.footer-bottom {
-  padding-top: 24px;
-  border-top: 1px solid rgba(246, 242, 233, 0.08);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-  color: rgba(246, 242, 233, 0.4);
-  letter-spacing: 0.08em;
-}
-
-/* ===== Logo card frames (used inside about) ===== */
-.logo-spec {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 30px;
-  border: 1px solid rgba(201, 169, 97, 0.25);
-  border-radius: 14px;
-  background: rgba(5, 13, 36, 0.5);
-}
-
-/* ===== WhatsApp floating button ===== */
-
-.wa-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 200;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #25d366;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35), 0 4px 12px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  animation: wa-pulse 2.4s ease-out infinite;
-}
-.wa-float::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: #25d366;
-  z-index: -1;
-  opacity: 0.55;
-  animation: wa-ring 2.4s ease-out infinite;
-}
-.wa-float:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 18px 36px rgba(37, 211, 102, 0.45), 0 6px 14px rgba(0, 0, 0, 0.22);
-}
-.wa-float:hover .wa-tooltip { opacity: 1; transform: translateX(0); }
-.wa-tooltip {
-  position: absolute;
-  right: 72px;
-  top: 50%;
-  transform: translateY(-50%) translateX(8px);
-  background: var(--navy-900);
-  color: var(--bone);
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s, transform 0.2s;
-  border: 1px solid rgba(201, 169, 97, 0.3);
-}
-.wa-tooltip::after {
-  content: '';
-  position: absolute;
-  right: -5px;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  width: 8px;
-  height: 8px;
-  background: var(--navy-900);
-  border-right: 1px solid rgba(201, 169, 97, 0.3);
-  border-top: 1px solid rgba(201, 169, 97, 0.3);
-}
-
-@keyframes wa-pulse {
-  0%, 100% { box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35), 0 4px 12px rgba(0, 0, 0, 0.18), 0 0 0 0 rgba(37, 211, 102, 0); }
-  50% { box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35), 0 4px 12px rgba(0, 0, 0, 0.18), 0 0 0 8px rgba(37, 211, 102, 0); }
-}
-@keyframes wa-ring {
-  0% { transform: scale(1); opacity: 0.55; }
-  100% { transform: scale(1.6); opacity: 0; }
-}
-
-@media (max-width: 640px) {
-  .wa-float { bottom: 20px; right: 20px; width: 54px; height: 54px; }
-  .wa-tooltip { display: none; }
-}
-
-/* Reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-</style>
-<style>
-
-  html, body { overflow-x: hidden; max-width: 100%; }
-  .hero, .hero-content, .container { max-width: 100%; }
-  .hero-content { min-width: 0; }
-  .hero-content > * { min-width: 0; }
-  .hero h1 { overflow-wrap: anywhere; }
-  .hero-sub { overflow-wrap: anywhere; }
-  .hero-mark-frame { max-width: 100% !important; }
-  .hero-mark-frame svg { max-width: 100%; height: auto; }
   @media (max-width: 980px) {
-    .hero-mark-frame { max-width: 420px !important; }
-  }
-  @media (max-width: 480px) {
-    .hero-mark-frame { max-width: 100% !important; }
-  }
-</style>
-<style>
-
-  .about-visual {
-    width: 80%;
-    justify-self: center;
-    align-self: center;
-  }
-  @media (max-width: 880px) {
-    .about-visual { width: 80%; max-width: 380px; }
-  }
-  .about-visual .about-photo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 25%;
-    display: block;
-    z-index: 1;
+    .tray-grid { grid-template-columns: 1fr; }
+    .tray-photo { margin-top: 8px; }
+    .tray-photo .accent { width: 84px; height: 84px; }
+    .showcase-grid { grid-template-columns: 1fr; }
+    .showcase-visual { margin-bottom: 56px; }
+    .dashboard { position: static; width: 100%; margin-top: 18px; left: 0; bottom: 0; }
+    .serv-row { grid-template-columns: 1fr; gap: 14px; }
+    .serv-row .n { padding-top: 0; }
+    .serv-row:hover { padding-left: 14px; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .method-grid { grid-template-columns: 1fr; }
+    .ind-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-grid { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr; }
+    .stat { padding: 26px 0 0; }
+    .stat + .stat { border-left: none; border-top: 1px solid var(--rule); padding-left: 0; }
   }
 </style>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5E2YBWXH9C"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-5E2YBWXH9C');
 </script>
-
-<!-- React 18 producción (~142 KB total vs ~1.19 MB) -->
-<script src="vendor/react.production.min.js"></script>
-<script src="vendor/react-dom.production.min.js"></script>
-
-<style>
-/* ===== Hero stats panel (lado derecho del hero) ===== */
-.hero-stats-panel {
-  border: 1px solid rgba(201, 169, 97, 0.25) !important;
-  background: rgba(10, 24, 56, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 40px 36px !important;
-  max-width: 420px !important;
-  width: 100%;
-  position: relative;
-}
-.hsp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-}
-.hsp-item {
-  padding: 28px 24px;
-  border-bottom: 1px solid rgba(201, 169, 97, 0.12);
-  border-right: 1px solid rgba(201, 169, 97, 0.12);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.hsp-item:nth-child(2n) { border-right: none; }
-.hsp-item:nth-child(3),
-.hsp-item:nth-child(4) { border-bottom: none; }
-.hsp-num {
-  font-family: var(--font-sans);
-  font-size: 52px;
-  font-weight: 800;
-  color: var(--gold-300);
-  line-height: 1;
-  letter-spacing: -0.04em;
-}
-.hsp-label {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(246, 242, 233, 0.5);
-  font-weight: 500;
-  line-height: 1.4;
-}
-@media (max-width: 980px) {
-  .hero-stats-panel { max-width: 380px !important; }
-  .hsp-num { font-size: 42px; }
-}
-@media (max-width: 560px) {
-  .hero-stats-panel { max-width: 100% !important; padding: 24px 20px !important; }
-  .hsp-item { padding: 20px 16px; }
-  .hsp-num { font-size: 36px; }
-}
-
-/* ===== WhatsApp CTA mobile (solo visible en mobile) ===== */
-.hero-wa-mobile {
-  display: none;
-}
-@media (max-width: 640px) {
-  .hero-wa-mobile {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: rgba(246, 242, 233, 0.65);
-    letter-spacing: 0.02em;
-    margin-top: 4px;
-    padding: 4px 0;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .hero-wa-mobile:hover { color: #25d366; }
-}
-
-
-/* hero-stats strip restaurado */
-</style>
 </head>
 <body>
-<div id="root"></div>
-<!-- Fallback para crawlers sin JS -->
-<noscript>
-  <div style="font-family:sans-serif;max-width:760px;margin:60px auto;padding:0 24px">
-    <h1>RH Gerencial — Consultoría Senior en Gestión de Personas</h1>
-    <p>Consultoría senior en RRHH para PYMEs y empresas medianas en Chile y Perú. Diagnóstico, auditoría laboral, transformación digital y cumplimiento normativo.</p>
-    <p>Contacto: <a href="mailto:paolagonzalez@rhgerencial.cl">paolagonzalez@rhgerencial.cl</a> · <a href="https://wa.me/56978592310">WhatsApp +56 9 7859 2310</a></p>
-    <p>Para usar este sitio, habilita JavaScript en tu navegador.</p>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#0A0A0B"/>
+    <text x="50" y="58" font-family="Manrope, sans-serif" font-size="30" font-weight="800" letter-spacing="-2" text-anchor="middle" fill="#fff">RH</text>
+    <rect x="62" y="40" width="7" height="7" fill="#FF4946"/>
+    <rect x="65.5" y="43.5" width="4" height="4" fill="#FF1A8C"/>
+  </svg>
+</template>
+
+<header class="nav" id="site-header">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo lockup" aria-label="RH Gerencial — inicio">
+      <span class="rh">RH<span class="sq"><i></i><i></i></span></span>
+      <span class="logo-stack">
+        <span class="word">Gerencial</span>
+        <span class="tagline">Estrategia · Personas · Resultados</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#enfoque">Enfoque</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="rh-academy.html">RH Academy</a>
+      <a href="postula.html">Postula</a>
+      <a href="#contacto" class="btn-grad" style="color: rgb(8, 8, 8)">Agendar</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</noscript>
+</header>
 
-<script src="src/logos.js"></script>
-<script src="src/backgrounds.js"></script>
-<script src="src/app.js"></script>
+<main style="color: rgb(10, 10, 11)">
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <div class="label"><span class="dot"></span><span>Consultoría senior de RRHH · Chile + Perú</span></div>
+    <h1 class="hero-h">Convertir la gestión de personas en una <span class="grad-text">ventaja estratégica</span> para empresas que quieren <span class="grad-text">crecer de forma sostenible</span>.</h1>
+    <div class="hero-cols">
+      <div class="hero-grid">
+        <p>Consultoría senior de Personas para PYMEs y empresas medianas. Diagnóstico, auditoría laboral, transformación digital y cumplimiento — con experiencia gerencial real en la operación.</p>
+        <div>
+          <p>Que tu área de Personas deje de apagar incendios y pase a ser motor de crecimiento. Ordenamos lo urgente, automatizamos lo repetitivo y blindamos lo legal.</p>
+          <a href="#enfoque" class="arrow-link grad-text">Descubre el enfoque →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SERVICIOS -->
+  <section class="section wrap" id="servicios">
+    <div class="label"><span class="dot"></span><span>Servicios</span></div>
+    <div class="blk-head">
+      <h2>Soluciones integrales para escalar tu gestión de personas</h2>
+      <p>Cada servicio se adapta a la realidad y madurez de tu empresa. Desde un diagnóstico rápido hasta un acompañamiento estratégico continuo — todo con foco en implementación, no sólo recomendación.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">01</span><span class="svc-cat">Diagnóstico</span></div>
+        <h3>Diagnóstico RRHH</h3>
+        <p class="sdesc">Evaluación integral de cumplimiento, estructura, procesos y brechas críticas del área de personas.</p>
+        <div class="svc-chips"><span>Mapa de cumplimiento</span><span>Estructura actual</span><span>Brechas priorizadas</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">02</span><span class="svc-cat">Cumplimiento</span></div>
+        <h3>Auditoría Laboral</h3>
+        <p class="sdesc">Revisión de nómina, cotizaciones, contratos, reglamentos y preparación ante fiscalizaciones.</p>
+        <div class="svc-chips"><span>Auditoría de nómina</span><span>Revisión contractual</span><span>Hallazgos y plan</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">03</span><span class="svc-cat">Implementación</span></div>
+        <h3>Implementación de procesos</h3>
+        <p class="sdesc">Diseño e instalación de on-boarding, evaluación de desempeño, clima organizacional y políticas.</p>
+        <div class="svc-chips"><span>Onboarding</span><span>Evaluación desempeño</span><span>Encuesta de clima</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">04</span><span class="svc-cat">Talento</span></div>
+        <h3>Reclutamiento &amp; Hunting</h3>
+        <p class="sdesc">Búsqueda y selección de talento clave — posiciones técnicas, profesionales y gerenciales.</p>
+        <div class="svc-chips"><span>Hunting y Onboarding gerencial</span><span>Assessment técnico</span><span>Reportes ejecutivos</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">05</span><span class="svc-cat">Digital</span></div>
+        <h3>Transformación Digital</h3>
+        <p class="sdesc">Implementación de HRIS, ATS, firma digital, automatización de procesos y herramientas de IA aplicada.</p>
+        <div class="svc-chips"><span>HRIS / ATS</span><span>Firma digital</span><span>IA aplicada a RRHH</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">06</span><span class="svc-cat">Normativa</span></div>
+        <h3>Cumplimiento Normativo</h3>
+        <p class="sdesc">Ley Karin, Ley 40 Horas, protocolos, reglamento interno, código de ética y prevención de riesgos.</p>
+        <div class="svc-chips"><span>Ley Karin</span><span>Ley 40 Horas</span><span>Reglamento interno</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">07</span><span class="svc-cat">Puntual</span></div>
+        <h3>Sesión Express</h3>
+        <p class="sdesc">Consultoría puntual por hora para resolver dudas específicas de gestión de personas o normativa.</p>
+        <div class="svc-chips"><span>Por hora</span><span>Respuesta concreta</span><span>Sin compromiso</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-top"><span class="svc-num grad-text">08</span><span class="svc-cat">Continuo</span></div>
+        <h3>Mentoría &amp; Dirección Externa</h3>
+        <p class="sdesc">Acompañamiento estratégico continuo al equipo interno para escalar el área de RRHH con guía experta.</p>
+        <div class="svc-chips"><span>Mensual / trimestral</span><span>Mentoría a Jefes RRHH</span><span>KPIs y seguimiento</span></div>
+        <a class="svc-cta" href="#contacto"><span class="grad-text">Conversemos</span><span class="ar grad-text">→</span></a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TRAYECTORIA -->
+  <section class="section wrap" id="trayectoria">
+    <div class="label"><span class="dot"></span><span>Trayectoria</span></div>
+    <div class="tray-grid">
+      <div class="tray-main">
+        <h2>Más de quince años creando y ordenando áreas de Personas en empresas que crecieron más rápido que sus procesos.</h2>
+        <p>Liderada por Paola González, RH Gerencial nace de la experiencia gerencial real en RRHH: haber estado dentro de la operación, tomado decisiones difíciles y construido equipos.</p>
+        <div class="stats">
+          <div class="stat"><div class="k grad-text">+15</div><div class="l">años de experiencia gerencial</div></div>
+          <div class="stat"><div class="k grad-text">2</div><div class="l">países · Chile + Perú</div></div>
+          <div class="stat"><div class="k grad-text">PYMEs</div><div class="l">y empresas medianas</div></div>
+        </div>
+      </div>
+      <div class="tray-photo">
+        <span class="accent"></span>
+        <img class="tray-img" src="assets/img/paola.webp" alt="Paola González, fundadora de RH Gerencial" />
+        <div class="photo-cap"><span class="dot"></span><span><b>Paola González</b> · Fundadora &amp; consultora senior</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENFOQUE: STATEMENT -->
+  <section class="statement" id="enfoque">
+    <div class="wrap">
+      <div class="label"><span class="dot"></span><span>El criterio que nadie te vende</span></div>
+      <p>Escalamos tu área de Personas con experiencia gerencial.</p>
+    </div>
+  </section>
+
+  <!-- ENFOQUE: POR QUÉ RH GERENCIAL -->
+  <section class="section wrap">
+    <div class="label"><span class="dot"></span><span>Por qué RH Gerencial</span></div>
+    <div class="blk-head">
+      <h2>Cuatro razones concretas</h2>
+      <p>Acompañamos a PYMEs y Start-Up a estructurar, profesionalizar y digitalizar su gestión de RRHH - con metodología, agilidad y visión estratégica. Sin los costos de una gerencia interna.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ltr grad-text">A</div>
+        <h3>Implementamos, no sólo asesoramos</h3>
+        <p>El informe es el inicio, no el final. Acompañamos hasta dejar el proceso instalado y al equipo capacitado.</p>
+      </div>
+      <div class="why-card">
+        <div class="ltr grad-text">B</div>
+        <h3>Gerencia externa con costo variable</h3>
+        <p>Acceso a experiencia gerencial senior sin la estructura fija de un Gerente RRHH interno.</p>
+      </div>
+      <div class="why-card">
+        <div class="ltr grad-text">C</div>
+        <h3>Transformación digital aplicada</h3>
+        <p>HRIS, ATS, firma digital, automatización e IA - implementamos de acuerdo a tu etapa de madurez.</p>
+      </div>
+      <div class="why-card">
+        <div class="ltr grad-text">D</div>
+        <h3>Cumplimiento al día</h3>
+        <p>Ley Karin, Ley 40 Horas, fiscalizaciones — te acompañamos en la revisión de normativa vigente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENFOQUE: METODOLOGÍA -->
+  <section class="method" id="metodologia">
+    <div class="wrap">
+      <div class="label"><span class="dot"></span><span>Metodología</span></div>
+      <div class="blk-head">
+        <h2>¿Cómo trabajamos?</h2>
+        <p>Nuestro servicio de Mentoria &amp; Dirección Externa tiene tres etapas.  Cada una con entregables claros y plazos definidos. El Plan de Acción lo creamos en base al nivel de madurez de tu empresa, les enseñamos a gestionarlo solos, permitiendo que el proceso sea escalable en la medida que la empresa crezca.</p>
+      </div>
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="mtop"><span class="mnum grad-text">01</span><span class="mtime">Semana 1–2</span></div>
+          <h3>Diagnóstico</h3>
+          <p>Evaluamos el estado actual de tu gestión de personas: cumplimiento, procesos, estructura y brechas críticas.</p>
+          <div class="deliver"><span class="dl">Entregable</span><span class="dv">Informe + mapa de brechas</span></div>
+        </div>
+        <div class="method-card">
+          <div class="mtop"><span class="mnum grad-text">02</span><span class="mtime">Semana 2–3</span></div>
+          <h3>Plan de Acción</h3>
+          <p>Diseñamos una hoja de ruta priorizada con entregables concretos, plazos y métricas de avance.</p>
+          <div class="deliver"><span class="dl">Entregable</span><span class="dv">Roadmap + KPIs</span></div>
+        </div>
+        <div class="method-card">
+          <div class="mtop"><span class="mnum grad-text">03</span><span class="mtime">Mes 1–6</span></div>
+          <h3>Implementación</h3>
+          <p>Ejecutamos o acompañamos la implementación — dejando procesos instalados y equipos capacitados internamente.</p>
+          <div class="deliver"><span class="dl">Entregable</span><span class="dv">Capacidades instaladas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENFOQUE: INDUSTRIAS -->
+  <section class="section wrap" style="padding-bottom: clamp(40px,7vw,72px)">
+    <div class="label"><span class="dot"></span><span>Industrias y mercados intervenidos</span></div>
+    <div class="ind-head">
+      <h2>Experiencia transversal en distintos rubros</h2>
+      <p>Hemos intervenido equipos de Personas en sectores con realidades y madurez muy distintas — adaptando cada solución a su operación.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">ING</div><span class="inum">01</span></div><div class="iname">Ingeniería</div><p class="idesc">Proyectos, terreno y dotaciones técnicas especializadas.</p></div>
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">TLC</div><span class="inum">02</span></div><div class="iname">Telecomunicaciones</div><p class="idesc">Operaciones de alta rotación y escala nacional.</p></div>
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">RET</div><span class="inum">03</span></div><div class="iname">Retail</div><p class="idesc">Turnos, temporadas peak y gestión masiva de personas.</p></div>
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">CON</div><span class="inum">04</span></div><div class="iname">Consultoría</div><p class="idesc">Firmas profesionales y servicios de alto valor agregado.</p></div>
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">AGR</div><span class="inum">05</span></div><div class="iname">Agroindustria</div><p class="idesc">Faenas estacionales, cuadrillas y normativa de terreno.</p></div>
+      <div class="ind-card"><div class="ind-top"><div class="abbr grad-text">STA</div><span class="inum">06</span></div><div class="iname">Start-ups</div><p class="idesc">Estructuras en crecimiento que recién forman su área.</p></div>
+    </div>
+  </section>
+</main>
+
+<!-- CONTACTO / FOOTER -->
+<footer class="site" id="contacto">
+  <div class="wrap">
+    <div class="foot-top">
+      <h2>Conversemos sobre<br/>tu área de <span class="grad-text">Personas</span>.</h2>
+      <div class="foot-contact" style="height: 147px">
+        <div class="name">
+</div>
+        <a class="mail" href="mailto:contacto@rhgerencial.cl">contacto@rhgerencial.cl</a>
+        <div class="phone grad-text">
+</div>
+        <div class="foot-cta">
+          <!-- Reemplaza el href "#agendar" por el enlace de tu calendario de citas (Calendly, Google Calendar, etc.) -->
+          <a class="btn-grad" id="agendar" href="#agendar">Agendar reunión →</a>
+          <a class="btn-out" href="https://wa.me/56978592310" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <a href="#top" class="logo">
+        <span class="rh" style="color:#fff">RH<span class="sq"><i></i><i></i></span></span>
+        <span class="word" style="color:#fff">Gerencial</span>
+      </a>
+      <span>Consultoría senior de Personas · Santiago · Lima · © 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script src="image-slot.js"></script>
 </body>
 </html>

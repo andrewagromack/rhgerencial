@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RH Academy · RH Gerencial</title>
+<meta name="description" content="RH Academy — contenido pedagógico de RRHH: guías, artículos y plantillas sobre cumplimiento, transformación digital y liderazgo de Personas." />
+<meta name="theme-color" content="#0A0A0B" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
+<style>
+  .page-hero { padding-top: clamp(48px, 7vw, 80px); }
+  .page-hero h1 { font-weight: 800; font-size: clamp(36px, 5.4vw, 66px); line-height: 1.02; letter-spacing: -0.035em; margin: 0; max-width: 940px; text-wrap: balance; }
+  .page-hero .lead { font-size: 18px; line-height: 1.55; color: var(--grey); font-weight: 500; max-width: 640px; margin: 26px 0 0; }
+
+  .cat-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 38px; }
+  .pill { font-family: inherit; font-size: 14px; font-weight: 600; color: var(--grey); background: var(--white); border: 1px solid var(--rule); border-radius: 40px; padding: 9px 18px; cursor: pointer; transition: color .18s, border-color .18s; }
+  .pill:hover { color: var(--black); border-color: var(--black); }
+  .pill.active { color: var(--white); background: var(--grad); border-color: transparent; }
+
+  .section { padding-top: clamp(56px, 8vw, 88px); }
+
+  /* featured */
+  .featured { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: stretch; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; }
+  .feat-media { position: relative; min-height: 320px; background: var(--grad); }
+  .feat-media .fbadge { position: absolute; top: 20px; left: 20px; background: rgba(10,10,11,0.85); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 7px 13px; border-radius: 40px; }
+  .feat-media .fbig { position: absolute; left: 28px; bottom: 24px; right: 28px; color: #fff; font-weight: 800; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; letter-spacing: -0.03em; text-wrap: balance; }
+  .feat-body { padding: clamp(28px, 3vw, 44px); display: flex; flex-direction: column; justify-content: center; }
+  .feat-body .cat { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--coral); }
+  .feat-body h2 { font-weight: 800; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.1; letter-spacing: -0.025em; margin: 14px 0 14px; }
+  .feat-body p { font-size: 16.5px; line-height: 1.6; color: var(--grey); font-weight: 500; margin: 0 0 24px; }
+  .feat-body .arrow-link { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; border-bottom: 2px solid var(--fucsia); padding-bottom: 3px; width: fit-content; transition: gap .18s; }
+  .feat-body .arrow-link:hover { gap: 14px; }
+
+  /* article grid */
+  .art-head { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--black); padding-bottom: 16px; margin-bottom: 36px; }
+  .art-head h2 { font-weight: 800; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.03em; margin: 0; }
+  .art-head .count { font-size: 14px; color: var(--grey-40); font-weight: 700; }
+  .art-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .art-card { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--white); transition: transform .2s, box-shadow .2s; cursor: pointer; display: flex; flex-direction: column; }
+  .art-card:hover { transform: translateY(-4px); box-shadow: 0 24px 44px -28px rgba(10,10,11,0.5); }
+  .art-thumb { position: relative; height: 168px; display: grid; place-items: center; }
+  .art-thumb .fmt { position: absolute; top: 14px; left: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 11px; border-radius: 40px; background: rgba(255,255,255,0.92); color: var(--black); }
+  .art-thumb .gl { font-size: 44px; font-weight: 800; letter-spacing: -0.04em; opacity: 0.9; }
+  .art-body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+  .art-body .cat { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--coral); }
+  .art-body h3 { font-weight: 700; font-size: 20px; line-height: 1.18; letter-spacing: -0.02em; margin: 10px 0 10px; }
+  .art-body p { font-size: 15px; line-height: 1.5; color: var(--grey); font-weight: 500; margin: 0 0 18px; flex: 1; }
+  .art-body .meta { font-size: 13px; color: var(--grey-soft); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .art-body .meta .d { width: 4px; height: 4px; border-radius: 50%; background: var(--grey-soft); }
+
+  /* newsletter */
+  .news { margin-top: clamp(72px, 11vw, 110px); background: var(--black); color: var(--white); padding: clamp(56px, 8vw, 92px) 0; }
+  .news-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+  .news h2 { font-weight: 800; font-size: clamp(28px, 3.6vw, 44px); line-height: 1.06; letter-spacing: -0.03em; margin: 0; }
+  .news p { font-size: 16.5px; line-height: 1.6; color: rgba(255,255,255,0.7); font-weight: 500; margin: 18px 0 0; max-width: 460px; }
+  .news-form { display: flex; gap: 12px; flex-wrap: wrap; }
+  .news-form input { flex: 1; min-width: 220px; font-family: inherit; font-size: 15px; color: #fff; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 14px 16px; min-height: 50px; }
+  .news-form input::placeholder { color: rgba(255,255,255,0.5); }
+  .news-form input:focus { outline: none; border-color: var(--fucsia); }
+  .news-ok { font-size: 14px; font-weight: 600; color: var(--white); margin-top: 14px; display: none; }
+  .news-ok.show { display: block; }
+
+  @media (max-width: 980px) {
+    .featured { grid-template-columns: 1fr; }
+    .feat-media { min-height: 240px; }
+    .art-grid { grid-template-columns: 1fr 1fr; }
+    .news-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) { .art-grid { grid-template-columns: 1fr; } }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E2YBWXH9C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5E2YBWXH9C');
+</script>
+</head>
+<body>
+
+<header class="nav" id="site-header">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo lockup" aria-label="RH Gerencial — inicio">
+      <span class="rh">RH<span class="sq"><i></i><i></i></span></span>
+      <span class="logo-stack">
+        <span class="word">Gerencial</span>
+        <span class="tagline">Estrategia · Personas · Resultados</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#enfoque">Enfoque</a>
+      <a href="index.html#trayectoria">Trayectoria</a>
+      <a href="rh-academy.html" class="active">RH Academy</a>
+      <a href="postula.html">Postula</a>
+      <a href="index.html#contacto" class="btn-grad">Agendar</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero wrap">
+    <div class="label"><span class="dot"></span><span>RH Academy · Conocimiento aplicado de Personas</span></div>
+    <h1>Gestiona tu área de Personas <span class="grad-text">como un gerente</span>, no a punta de ensayo y error.</h1>
+    <p class="lead">Guías, artículos y plantillas prácticas sobre cumplimiento, transformación digital y liderazgo de equipos. Hecho para dueños de PYME, jefaturas y quienes recién parten en RRHH.</p>
+    <div class="cat-row" id="cats">
+      <button class="pill active">Todos</button>
+      <button class="pill">Cumplimiento</button>
+      <button class="pill">Transformación digital</button>
+      <button class="pill">Liderazgo</button>
+      <button class="pill">Reclutamiento</button>
+      <button class="pill">Plantillas</button>
+    </div>
+  </section>
+
+  <!-- DESTACADO -->
+  <section class="section wrap">
+    <div class="featured">
+      <div class="feat-media">
+        <span class="fbadge">Guía esencial</span>
+        <div class="fbig">Ley Karin: qué debe tener listo tu empresa hoy</div>
+      </div>
+      <div class="feat-body">
+        <span class="cat">Cumplimiento</span>
+        <h2>La checklist completa para no quedar expuesto</h2>
+        <p>Protocolo de prevención, canal de denuncias, plazos de investigación y obligaciones del empleador. Una guía paso a paso para implementar la Ley Karin sin morir en el intento — con plantillas descargables.</p>
+        <a href="#" class="arrow-link grad-text">Leer la guía →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIBLIOTECA -->
+  <section class="section wrap" style="padding-bottom: clamp(24px,4vw,40px)">
+    <div class="art-head">
+      <h2>Biblioteca</h2>
+      <span class="count">8 recursos</span>
+    </div>
+    <div class="art-grid" id="grid">
+      <article class="art-card">
+        <div class="art-thumb" style="background:linear-gradient(150deg,#FFE7E3,#FFE1F0)"><span class="fmt">Artículo</span><span class="gl grad-text">40h</span></div>
+        <div class="art-body">
+          <span class="cat">Cumplimiento</span>
+          <h3>Ley 40 Horas: cómo planificar la reducción de jornada</h3>
+          <p>Etapas, gradualidad y cómo ajustar turnos sin afectar la operación ni el clima.</p>
+          <div class="meta">Artículo<span class="d"></span>6 min de lectura</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:var(--black)"><span class="fmt">Guía</span><span class="gl" style="color:#fff">HRIS</span></div>
+        <div class="art-body">
+          <span class="cat">Transformación digital</span>
+          <h3>Cómo elegir tu primer software de RRHH (HRIS)</h3>
+          <p>Criterios reales para PYME: qué evaluar, qué evitar y cómo calcular el retorno.</p>
+          <div class="meta">Guía<span class="d"></span>9 min de lectura</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:linear-gradient(150deg,#FFE1F0,#F3E3FF)"><span class="fmt">Plantilla</span><span class="gl grad-text">KPI</span></div>
+        <div class="art-body">
+          <span class="cat">Plantillas</span>
+          <h3>Tablero de indicadores de Personas (Excel/Sheets)</h3>
+          <p>Dotación, rotación, ausentismo y clima en una plantilla lista para usar.</p>
+          <div class="meta">Plantilla<span class="d"></span>Descarga</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:linear-gradient(150deg,#FFEFE0,#FFE7E3)"><span class="fmt">Artículo</span><span class="gl grad-text">★</span></div>
+        <div class="art-body">
+          <span class="cat">Liderazgo</span>
+          <h3>De experto técnico a jefatura: la transición que nadie prepara</h3>
+          <p>Las cinco conversaciones que todo nuevo líder de equipo debe dominar.</p>
+          <div class="meta">Artículo<span class="d"></span>7 min de lectura</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:var(--paper2)"><span class="fmt">Guía</span><span class="gl grad-text">ATS</span></div>
+        <div class="art-body">
+          <span class="cat">Reclutamiento</span>
+          <h3>Procesos de selección que no espantan al buen candidato</h3>
+          <p>Estructura de entrevista, scorecards y tiempos que mejoran tu tasa de cierre.</p>
+          <div class="meta">Guía<span class="d"></span>8 min de lectura</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:linear-gradient(150deg,#F3E3FF,#FFE1F0)"><span class="fmt">Webinar</span><span class="gl grad-text">▶</span></div>
+        <div class="art-body">
+          <span class="cat">Transformación digital</span>
+          <h3>IA en RRHH: dónde sí ayuda y dónde es puro humo</h3>
+          <p>Casos reales de automatización con criterio operativo, no como moda.</p>
+          <div class="meta">Webinar<span class="d"></span>38 min</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:var(--black)"><span class="fmt">Plantilla</span><span class="gl" style="color:#fff">DOC</span></div>
+        <div class="art-body">
+          <span class="cat">Plantillas</span>
+          <h3>Reglamento interno: estructura base comentada</h3>
+          <p>Un esqueleto editable con las cláusulas mínimas y las opcionales clave.</p>
+          <div class="meta">Plantilla<span class="d"></span>Descarga</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="art-thumb" style="background:linear-gradient(150deg,#FFE7E3,#FFEFE0)"><span class="fmt">Artículo</span><span class="gl grad-text">90d</span></div>
+        <div class="art-body">
+          <span class="cat">Liderazgo</span>
+          <h3>Onboarding de 90 días: que el talento nuevo no se vaya en 3 meses</h3>
+          <p>Un plan semana a semana para integrar bien y reducir la rotación temprana.</p>
+          <div class="meta">Artículo<span class="d"></span>5 min de lectura</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="news" id="suscribete">
+    <div class="wrap">
+      <div class="news-grid">
+        <div>
+          <h2>Recibe contenido de RRHH<br/>que sí puedes aplicar.</h2>
+          <p>Una vez al mes: una guía o plantilla práctica, sin relleno. Cumplimiento, gestión y transformación digital de Personas.</p>
+        </div>
+        <div>
+          <form class="news-form" id="newsForm" novalidate>
+            <input type="email" id="newsEmail" placeholder="tu@correo.cl" aria-label="Tu correo" required />
+            <button type="submit" class="btn-grad" style="padding:14px 26px">Suscribirme →</button>
+          </form>
+          <div class="news-ok" id="newsOk">¡Listo! Te sumamos a la lista. Revisa tu correo. ✦</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="contacto">
+  <div class="wrap">
+    <div class="foot-top">
+      <h2>¿Prefieres que lo<br/>resolvamos contigo?</h2>
+      <div class="foot-contact">
+        <div class="name">Paola González</div>
+        <a class="mail" href="mailto:paolagonzalez@rhgerencial.cl">paolagonzalez@rhgerencial.cl</a>
+        <div class="phone grad-text">+56 9 7859 2310</div>
+        <div class="foot-cta">
+          <a class="btn-grad" href="index.html#contacto">Agendar reunión →</a>
+          <a class="btn-out" href="https://wa.me/56978592310" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <a href="index.html" class="logo">
+        <span class="rh" style="color:#fff">RH<span class="sq"><i></i><i></i></span></span>
+        <span class="word" style="color:#fff">Gerencial</span>
+      </a>
+      <span>Consultoría senior de Personas · Santiago · Lima · © 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script>
+  // Category pills (filtro visual; conecta a tu CMS para filtrar de verdad)
+  var pills = document.querySelectorAll('#cats .pill');
+  pills.forEach(function (p) {
+    p.addEventListener('click', function () {
+      pills.forEach(function (x) { x.classList.remove('active'); });
+      p.classList.add('active');
+    });
+  });
+  // Newsletter (demo)
+  var nf = document.getElementById('newsForm');
+  if (nf) nf.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('newsEmail');
+    if (!email.value || email.value.indexOf('@') < 0) { email.focus(); return; }
+    nf.style.display = 'none';
+    document.getElementById('newsOk').classList.add('show');
+  });
+</script>
+</body>
+</html>
