@@ -2,3 +2,16 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rhgerencial.cl/sitemap.xml
+
+# LLM crawlers
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /llms.txt
