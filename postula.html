@@ -7,7 +7,21 @@
 <title>Postula · RH Gerencial</title>
 <meta content="Deja tu CV en RH Gerencial. Lo clasificamos por área de experiencia para nuestros procesos de reclutamiento y selección." name="description"/>
 <meta content="#0A0A0B" name="theme-color"/>
+<link href="assets/favicon/favicon.ico" rel="icon" sizes="any"/>
 <link href="assets/favicon/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="RH Gerencial"/>
+<meta property="og:title" content="Postula · RH Gerencial"/>
+<meta property="og:description" content="Deja tu CV en RH Gerencial. Lo clasificamos por área de experiencia para nuestros procesos de reclutamiento y selección."/>
+<meta property="og:url" content="https://rhgerencial.cl/postula.html"/>
+<meta property="og:image" content="https://rhgerencial.cl/assets/img/og-rh-gerencial.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Postula · RH Gerencial"/>
+<meta name="twitter:description" content="Deja tu CV en RH Gerencial. Lo clasificamos por área de experiencia para nuestros procesos de reclutamiento y selección."/>
+<meta name="twitter:image" content="https://rhgerencial.cl/assets/img/og-rh-gerencial.jpg"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -73,6 +87,30 @@
     .form-wrap { grid-template-columns: 1fr; }
     .apply-form { grid-template-columns: 1fr; }
   }
+
+
+  /* Tally embed integrado */
+  .areas { margin-top: 38px; }
+  .area-card { cursor: default; }
+  .area-card:hover { border-color: var(--rule); transform: none; }
+  .area-card .tick { display: none; }
+
+  .tally-wrap { grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr); }
+  .tally-panel { min-width: 0; }
+  .tally-panel-head { margin-bottom: 20px; max-width: 760px; }
+  .tally-kicker { display: inline-flex; margin-bottom: 12px; font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); }
+  .tally-panel-head h2 { font-weight: 800; font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.03em; line-height: 1.08; margin: 0; }
+  .tally-panel-head p { font-size: 15.5px; line-height: 1.62; color: var(--grey); font-weight: 500; margin: 14px 0 0; }
+  .tally-form-card { position: relative; background: var(--white); border: 1px solid rgba(10,10,11,0.12); border-radius: 12px; overflow: hidden; box-shadow: 0 28px 70px -42px rgba(10,10,11,0.54); }
+  .tally-form-card::before { content: ""; display: block; height: 5px; background: var(--grad); }
+  .tally-form-card iframe { display: block; width: 100%; min-height: 850px; border: 0; background: transparent; }
+  .tally-aside { position: sticky; top: 104px; }
+
+  @media (max-width: 980px) {
+    .tally-wrap { grid-template-columns: 1fr; }
+    .tally-aside { position: static; }
+    .tally-form-card iframe { min-height: 980px; }
+  }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5E2YBWXH9C"></script>
@@ -116,40 +154,40 @@
 <!-- ÁREAS -->
 <section class="section wrap">
 <div class="blk-head">
-<h2>Elige tu área de experiencia</h2>
-<p>Selecciona el área donde tienes mayor trayectoria. Así dirigimos tu CV a la carpeta correcta de nuestro banco de talento.</p>
+<h2>Áreas de experiencia que recibimos</h2>
+<p>Indica tu especialidad directamente en el formulario. Esta referencia nos ayuda a ordenar los perfiles dentro del banco de talento.</p>
 </div>
 <div class="areas" id="areas">
-<button class="area-card" data-area="Reclutamiento &amp; Selección" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">01</div><h3>Reclutamiento &amp; Selección</h3>
-<p>Sourcing, entrevistas, evaluación, ATS y employer branding.</p>
-</button>
-<button class="area-card" data-area="Remuneraciones &amp; Compensaciones" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">02</div><h3>Remuneraciones &amp; Compensaciones</h3>
-<p>Liquidaciones, estructuras de renta, beneficios y previsión.</p>
-</button>
-<button class="area-card" data-area="Relaciones Laborales &amp; Cumplimiento" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">03</div><h3>Relaciones Laborales &amp; Cumplimiento</h3>
-<p>Contratos, Ley Karin, jornada, sindicatos y fiscalizaciones.</p>
-</button>
-<button class="area-card" data-area="Desarrollo Organizacional" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">04</div><h3>Desarrollo Organizacional</h3>
-<p>Capacitación, clima, desempeño, cultura y gestión del cambio.</p>
-</button>
-<button class="area-card" data-area="Transformación Digital / HRIS" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">05</div><h3>Transformación Digital / HRIS</h3>
-<p>Implementación de software, automatización, datos y reporting.</p>
-</button>
-<button class="area-card" data-area="Jefatura / Gerencia de Personas" type="button">
-<span class="tick"><svg fill="none" viewbox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
-<div class="ac-n">06</div><h3>Jefatura / Gerencia de Personas</h3>
-<p>Liderazgo del área, estrategia, presupuesto y reporte a dirección.</p>
-</button>
+<article class="area-card">
+
+<div class="ac-n">01</div><h3>Área de Recursos Humanos</h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
+<article class="area-card">
+
+<div class="ac-n">02</div><h3>Área de administración, contabilidad, finanzas</h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
+<article class="area-card">
+
+<div class="ac-n">03</div><h3>Área Comercial    </h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
+<article class="area-card">
+
+<div class="ac-n">04</div><h3>Área de operaciones y logística</h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
+<article class="area-card">
+
+<div class="ac-n">05</div><h3>Áreas técnicas especializadas</h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
+<article class="area-card">
+
+<div class="ac-n">06</div><h3>Alta Gerencia</h3>
+<p>Gerencias, Sub Gerencias, Jefaturas, asistentes y prácticas.</p>
+</article>
 </div>
 </section>
 <!-- FORMULARIO -->
@@ -158,68 +196,30 @@
 <h2>Envía tu postulación</h2>
 <p>Completa tus datos y adjunta tu CV. Te confirmamos la recepción y te contactamos cuando surja un proceso afín.</p>
 </div>
-<div class="form-wrap">
-<!-- Conecta este formulario a tu repositorio: cambia el action por tu endpoint (Google Form, Formspree, ATS o correo). -->
-<form class="apply-form" id="cvForm" novalidate="">
-<div class="field">
-<label for="nombre">Nombre completo <span class="req">*</span></label>
-<input id="nombre" name="nombre" placeholder="Tu nombre" required="" type="text"/>
+
+<div class="form-wrap tally-wrap">
+<div class="tally-panel">
+<div class="tally-panel-head">
+<span class="tally-kicker">Formulario seguro</span>
+<h2>Completa tus datos y adjunta tu CV</h2>
+<p>Usamos Tally para recibir el formulario y almacenar el archivo enviado. Recomendamos adjuntar el currículum en PDF, idealmente bajo 10 MB.</p>
 </div>
-<div class="field">
-<label for="email">Correo electrónico <span class="req">*</span></label>
-<input id="email" name="email" placeholder="tu@correo.cl" required="" type="email"/>
+<div class="tally-form-card">
+<iframe data-tally-src="https://tally.so/embed/PdrebP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0" title="Base CV"></iframe>
 </div>
-<div class="field">
-<label for="telefono">Teléfono</label>
-<input id="telefono" name="telefono" placeholder="+56 9 ..." type="tel"/>
 </div>
-<div class="field">
-<label for="area">Área de experiencia <span class="req">*</span></label>
-<select id="area" name="area" required="">
-<option disabled="" selected="" value="">Selecciona un área…</option>
-<option>Reclutamiento &amp; Selección</option>
-<option>Remuneraciones &amp; Compensaciones</option>
-<option>Relaciones Laborales &amp; Cumplimiento</option>
-<option>Desarrollo Organizacional</option>
-<option>Transformación Digital / HRIS</option>
-<option>Jefatura / Gerencia de Personas</option>
-</select>
-</div>
-<div class="field full">
-<label for="linkedin">LinkedIn / portafolio</label>
-<input id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/..." type="url"/>
-</div>
-<div class="field full">
-<label>Currículum (PDF) <span class="req">*</span></label>
-<label class="file" for="cv">
-<span class="fl-ic"><svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M8 11V3M8 3L5 6M8 3l3 3M3 11v1a1 1 0 001 1h8a1 1 0 001-1v-1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
-<span class="fl-tx" id="fileLabel">Arrastra o haz clic para subir tu CV (PDF, máx. 5 MB)</span>
-<input accept=".pdf,.doc,.docx" id="cv" name="cv" required="" type="file"/>
-</label>
-</div>
-<div class="field full">
-<label for="mensaje">Mensaje (opcional)</label>
-<textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente tu experiencia o qué tipo de rol buscas."></textarea>
-</div>
-<div class="form-submit">
-<button class="btn-grad lg" type="submit">Enviar postulación →</button>
-<span class="form-note">Tus datos se usan sólo para procesos de selección de RH Gerencial.</span>
-</div>
-</form>
-<aside class="aside">
+<aside class="aside tally-aside">
 <h3>Cómo funciona</h3>
 <ul>
-<li><span class="b"></span><span>Recibimos tu CV y lo guardamos en nuestro banco de talento, ordenado por área de experiencia.</span></li>
-<li><span class="b"></span><span>Cuando un cliente abre un proceso afín a tu perfil, te contactamos directamente.</span></li>
-<li><span class="b"></span><span>Procesos confidenciales y trato profesional en cada etapa.</span></li>
+<li><span class="b"></span><span>Recibimos tu CV y lo incorporamos al banco de talento de RH Gerencial.</span></li>
+<li><span class="b"></span><span>Clasificamos tu perfil según experiencia, especialidad y tipo de rol buscado.</span></li>
+<li><span class="b"></span><span>Cuando exista un proceso afín, el equipo puede contactarte directamente.</span></li>
 </ul>
-<p class="note">Postular no garantiza un cargo inmediato: ingresas a nuestro repositorio para futuros procesos de reclutamiento y selección.</p>
+<p class="note">Postular no garantiza un cargo inmediato: ingresas al repositorio para futuros procesos de reclutamiento y selección.</p>
 </aside>
 </div>
-<div class="thanks" id="thanks">
-<h3>¡Gracias por postular! ✦</h3>
-<p>Recibimos tu información y la sumamos a nuestro banco de talento en el área seleccionada. Te contactaremos cuando se abra un proceso afín a tu perfil.</p>
-</div>
+
+
 </section>
 </main>
 <footer class="site" id="contacto">
@@ -246,40 +246,6 @@
 </div>
 </footer>
 <script src="nav.js"></script>
-<script>
-  // Area cards <-> select sync
-  var areaCards = document.querySelectorAll('#areas .area-card');
-  var areaSelect = document.getElementById('area');
-  areaCards.forEach(function (c) {
-    c.addEventListener('click', function () {
-      areaCards.forEach(function (x) { x.classList.remove('sel'); });
-      c.classList.add('sel');
-      if (areaSelect) areaSelect.value = c.getAttribute('data-area');
-    });
-  });
-  if (areaSelect) areaSelect.addEventListener('change', function () {
-    areaCards.forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-area') === areaSelect.value); });
-  });
-
-  // File label
-  var cv = document.getElementById('cv');
-  var fileLabel = document.getElementById('fileLabel');
-  if (cv) cv.addEventListener('change', function () {
-    fileLabel.textContent = cv.files && cv.files.length ? cv.files[0].name : 'Arrastra o haz clic para subir tu CV (PDF, máx. 5 MB)';
-  });
-
-  // Submit (demo: muestra confirmación. Conecta a tu repositorio reemplazando este bloque.)
-  var form = document.getElementById('cvForm');
-  var thanks = document.getElementById('thanks');
-  if (form) form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    form.style.display = 'none';
-    document.querySelector('.aside').style.display = 'none';
-    thanks.classList.add('show');
-    thanks.scrollIntoView ? null : null;
-    window.scrollTo({ top: thanks.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' });
-  });
-</script>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </body>
 </html>
